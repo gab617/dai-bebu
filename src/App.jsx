@@ -104,6 +104,7 @@ function App() {
               <SocialIcon network="whatsapp" />
             </li>
           </ul>
+          <h1>Mail de contacto: 123@gmail.com </h1>
         </div>
       </section>
     </div>

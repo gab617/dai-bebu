@@ -16,9 +16,22 @@
     justify-content: center;
 }
 
+
+#redes-sociales-footer{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 #redes-sociales-footer ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+#redes-sociales-footer h2{
+    text-align: center;
 }
 
