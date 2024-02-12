@@ -14,7 +14,7 @@ a {
 body {
   font-family: 'Protest Revolution', sans-serif;
   color: #333;
-  background-image: url('fondo1.jpg');
+  background-image: url('/fondo1.jpg');
   /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
   background-size: cover;
   /* Esto ajustará la imagen para cubrir todo el fondo */
@@ -227,9 +227,9 @@ li a {
 }
 
 @media only screen and (max-width: 450px) {
-  body{
-    background: rgb(237,40,156);
-background: linear-gradient(90deg, rgba(237,40,156,0.7679446778711485) 5%, rgba(200,200,8,0.8883928571428571) 96%);
+  body {
+    background: rgb(237, 40, 156);
+    background: linear-gradient(90deg, rgba(237, 40, 156, 0.7679446778711485) 5%, rgba(200, 200, 8, 0.8883928571428571) 96%);
   }
 
   #Principal {
@@ -278,27 +278,27 @@ background: linear-gradient(90deg, rgba(237,40,156,0.7679446778711485) 5%, rgba(
     width: 100%;
   }
 
-  #about-content{
+  #about-content {
     width: 80%;
   }
 
   #about-content h1 {
     color: #490514;
     margin-bottom: .8em;
-  
+
   }
-  
+
   #about-content p {
     margin-bottom: 2em;
     font-size: 1.3em;
   }
 
-  #redes-principal ul{
+  #redes-principal ul {
     margin-top: 1em;
     margin-bottom: 1.3em;
   }
 
-  #about button{
+  #about button {
     margin-top: 0;
     margin-bottom: 1.2em;
   }
