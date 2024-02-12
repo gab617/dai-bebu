@@ -13,7 +13,6 @@ a {
 
 body {
   font-family: 'Protest Revolution', sans-serif;
-  background-color: #4140409f;
   color: #333;
   background-image: url('fondo1.jpg');
   /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
@@ -21,7 +20,6 @@ body {
   /* Esto ajustará la imagen para cubrir todo el fondo */
   background-position: center;
   /* Esto centrará la imagen */
-
   box-shadow: 0 0 20px rgba(0, 0, 0, 2)
 }
 
@@ -229,6 +227,10 @@ li a {
 }
 
 @media only screen and (max-width: 450px) {
+  body{
+    background: rgb(237,40,156);
+background: linear-gradient(90deg, rgba(237,40,156,0.7679446778711485) 5%, rgba(200,200,8,0.8883928571428571) 96%);
+  }
 
   #Principal {
     display: flex;
