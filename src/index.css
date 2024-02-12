@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Protest Revolution', sans-serif;
+  background-color: #4140409f;
+  color: #333;
+  background-image: url('fondo1.jpg');
+  /* Reemplaza 'ruta/de/tu/imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  /* Esto ajustará la imagen para cubrir todo el fondo */
+  background-position: center;
+  /* Esto centrará la imagen */
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 2)
+}
+
+nav {
+  width: 95%;
+  position: sticky;
+  top: 0;
+  background-color: #e4007d34;
+
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.1em 0;
+}
+
+nav h1 {
+  margin-bottom: .3em;
+  color: #ffe180;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li a {
+  margin-right: 1.6em;
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+#Principal {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#princ-left {
+  width: 50%;
+  max-height: 100vh;
+  background-color: #e4007d7a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#p-l-text {
+  margin-top: 12em;
+
+}
+
+#p-l-text h2 {
+  color: #ffe180;
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
+#p-l-text h1 {
+  color: #f4f4f4;
+  font-size: 5em;
+
+}
+
+#p-l-text p {
+  color: #f4f4f4;
+  margin-top: 1em;
+}
+
+#princ-right {
+  width: 50%;
+}
+
+#princ-right img {
+  width: 100%;
+  max-height: 100vh;
+}
+
+/*  */
+
+#about {
+  width: 95%;
+  min-height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.767);
+  background-color: #e4007d34;
+
+
+}
+
+#about button {
+  background: rgba(255, 221, 0, 0.658);
+  padding: 1em;
+  border-radius: .3em;
+  border: 0;
+  margin-top: 1.5em;
+
+}
+
+#about button:hover {
+  background-color: rgba(46, 80, 83, 0.788);
+  color: #f4f4f4;
+  cursor: pointer;
+
+}
+
+#about-content {
+  width: 60%;
+  margin-top: 5em;
+  text-align: center;
+}
+
+#about-history {
+  margin-top: 1em;
+}
+
+#about-content h1 {
+  color: #ec1e4b;
+  margin-bottom: .8em;
+
+}
+
+#about-content p {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+
+/*  */
+#portfolio {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #e4007d91;
+
+
+}
+
+#gallery-content {
+  width: 100%;
+}
+
+#gallery-content h1 {
+  text-align: center;
+  color: #ffe180;
+  font-size: 3em;
+  padding: .3em;
+}
+
+#gallery {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  /* Asegura que el contenedor tenga un aspecto cuadrado */
+  overflow: hidden;
+}
+
+.image img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+
+  #gallery {
+    width: 90%;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+
+    gap: 1em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+  }
+
+  #princ-right img {
+    width: auto;
+    max-height: 100vh;
+  }
+
+}
+
+@media only screen and (max-width: 710px) {
+  #gallery {
+    width: 90%;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    margin: 0 auto;
+  }
+
+  .image {
+    padding-bottom: 60%;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+  #Principal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #princ-left {
+    width: 100%;
+    max-height: 100vh;
+    background-color: #e4007d7a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #p-l-text {
+    margin-top: 1.3em;
+
+  }
+
+  #p-l-text h2 {
+    color: #ffe180;
+    margin-bottom: .3em;
+    font-size: 3em;
+  }
+
+  #p-l-text h1 {
+    color: #f4f4f4;
+    font-size: 5em;
+
+  }
+
+  #p-l-text p {
+    font-size: 1.2em;
+    color: #f4f4f4;
+    margin-top: 1em;
+  }
+
+  #princ-right {
+    width: 100%;
+  }
+
+  #princ-right img {
+    width: 100%;
+  }
+
+  #about-content{
+    width: 80%;
+  }
+
+  #about-content h1 {
+    color: #490514;
+    margin-bottom: .8em;
+  
+  }
+  
+  #about-content p {
+    margin-bottom: 2em;
+    font-size: 1.3em;
+  }
+
+  #redes-principal ul{
+    margin-top: 1em;
+    margin-bottom: 1.3em;
+  }
+
+  #about button{
+    margin-top: 0;
+    margin-bottom: 1.2em;
+  }
+}
