@@ -65,9 +65,9 @@ function App() {
           <p>¡Bienvenid@ a mi portfolio! Soy Daiana Estefanía, una modelo apasionada por la moda, el arte, el amor y los horizontes a descubrir, siempre con la mejor vibra y disfrutando cada paso. En mí destaco la dedicación por el arte en general, siempre buscando involucrarme cada vez más en el mundo de la moda.</p>
           <div id='about-history'>
             <h1>Mi historia</h1>
-            <p>Soy una modelo con varios años de experiencia en la industria. He trabajado en desfiles de moda, sesiones fotográficas y eventos destacados. También me encuentro capacitando en clases de varios tipos de danza como zumba, pole dance y twerk. Mi objetivo es seguir aprendiendo nuevos ritmos e ir puliendo cada vez más mis clases.</p>
+            <p>Soy una modelo con varios años de experiencia en la industria. He trabajado en desfiles de moda, sesiones fotográficas y eventos destacados. También me encuentro capacitando en clases de varios tipos de danza como danzas clasicas, árabe, zumba, pole dance y twerk. Mi objetivo es seguir aprendiendo nuevos ritmos e ir puliendo cada vez más mis clases.</p>
           </div>
-          <button>CV online</button>
+          {/* <button>CV online</button> */}
         </div>
 
       </section>
