@@ -1,10 +1,11 @@
+import { lazy, Suspense } from 'react';
 import './App.css'
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
 import { SocialIcon } from 'react-social-icons'
 import { urls_imgs } from "./assets/imgsUrls.json"
-
+const LazyPortfolio = lazy(() => import("./components/Portfolio"))
 
 
 function App() {
@@ -74,25 +75,13 @@ function App() {
       {/* Sección de Fotografía */}
       <section id="portfolio">
 
-        <div id='gallery-video'>
-
-        </div>
-
-        <div id='gallery-content'>
-          <h1>Galería</h1>
-
-          <div id='gallery'>
-            {
-              corazones && corazones.map((pic, index) => (
-                <div key={index} className='image'>
-                  <img src={pic} alt="" />
-                </div>
-              ))
-            }
-          </div>
-        </div>
-
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyPortfolio
+            corazones={corazones}
+          />
+        </Suspense>
       </section>
+
 
       {/* Formulario de Contacto */}
       <section id="contact">

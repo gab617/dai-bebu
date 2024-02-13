@@ -58,6 +58,17 @@
 
 }
 
+#redes-sociales-footer #r-s-f-cont li a{
+    margin-right: 0;
+}
+
+#mail-txt{
+        
+    text-shadow: 4px 1px 5px rgb(237, 40, 156);
+    color: rgba(0, 0, 0, 0.849);
+}
+
+
 @media only screen and (max-width: 450px){
     #redes-sociales-footer {
         display: flex;
@@ -78,11 +89,7 @@
         margin-bottom: 5em;
     }
 
-    #mail-txt{
-        
-        text-shadow: 4px 1px 5px rgb(237, 40, 156);
-        color: rgba(0, 0, 0, 0.849);
-    }
+
 
     #redes-sociales-footer #r-s-f-cont li a{
         margin-right: 0;

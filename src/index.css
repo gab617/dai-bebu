@@ -196,15 +196,14 @@ li a {
 .image {
   position: relative;
   width: 100%;
-  padding-bottom: 100%;
   /* Asegura que el contenedor tenga un aspecto cuadrado */
   overflow: hidden;
 }
 
 .image img {
-  position: absolute;
   width: 100%;
   height: auto;
+  border-radius: 1em;
 }
 
 @media only screen and (max-width: 1080px) {
@@ -233,7 +232,6 @@ li a {
   }
 
   .image {
-    padding-bottom: 60%;
   }
 
 }
