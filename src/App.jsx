@@ -34,13 +34,15 @@ function App() {
         <div id='princ-left'>
           <div id='p-l-text'>
             <h2>Hola, soy</h2>
-            <h1>Daiana Estefi</h1>
+            <h1>Daiana Estefania</h1>
             <p>Artista/ Modelo/ Profesional de la danza</p>
           </div>
           <div id='redes-principal'>
             <ul>
               <li>
-                <SocialIcon network="instagram" />
+                <a target="_blank" href="https://www.instagram.com/daianaa.estefania/">
+                  <SocialIcon network="instagram" />
+                </a>
               </li>
               <li>
                 <SocialIcon network="whatsapp" />
@@ -95,16 +97,25 @@ function App() {
       {/* Formulario de Contacto */}
       <section id="contact">
         <div id="redes-sociales-footer">
-          <h2>Sígueme en redes sociales</h2>
-          <ul>
-            <li>
-              <SocialIcon network="instagram" />
-            </li>
-            <li>
-              <SocialIcon network="whatsapp" />
-            </li>
-          </ul>
-          <h1>Mail de contacto: 123@gmail.com </h1>
+          <div id='r-s-f-photo'>
+            <img src="/girlfriend.png" alt="" />
+          </div>
+          <div id="r-s-f-cont">
+            <h2>Sígueme en redes sociales</h2>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/daianaa.estefania/">
+                  <SocialIcon network="instagram" />
+                </a>
+              </li>
+              <li>
+                <SocialIcon network="whatsapp" />
+              </li>
+            </ul>
+            <h1>Mail de contacto:</h1>
+            <h1 id='mail-txt'>ayaladaiana10@gmail.com</h1>
+
+          </div>
         </div>
       </section>
     </div>
