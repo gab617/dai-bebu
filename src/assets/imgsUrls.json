@@ -1,15 +1,16 @@
 {
     "urls_imgs": {
       "corazones": [
-        "corazones/c1.jpg",
-        "corazones/c2.jpg",
-        "corazones/c3.jpg",
-        "corazones/c4.jpg",
-        "corazones/c5.jpg",
-        "corazones/c6.jpg",
-        "corazones/c7.jpg",
-        "corazones/c8.jpg",
-        "corazones/c9.jpg"
+        "corazones/c1.jpeg",
+        "corazones/c2.jpeg",
+        "corazones/c3.jpeg",
+        "corazones/c4.jpeg",
+        "corazones/c5.jpeg",
+        "corazones/c6.jpeg",
+        "corazones/c8.jpeg",
+        "corazones/c9.jpeg",
+        "corazones/c10.jpeg",
+        "corazones/c11.jpeg"
       ]
     }
   }

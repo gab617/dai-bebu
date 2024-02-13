@@ -54,7 +54,7 @@ function App() {
 
         </div>
         <div id='princ-right'>
-          <img src="dai-portada.png" alt="" />
+          <img src="portada.jpeg" alt="" />
         </div>
       </section>
 
@@ -87,7 +87,7 @@ function App() {
       <section id="contact">
         <div id="redes-sociales-footer">
           <div id='r-s-f-photo'>
-            <img src="/girlfriend.png" alt="" />
+            <img src="/redes.jpeg" alt="" />
           </div>
           <div id="r-s-f-cont">
             <h2>Sígueme en redes sociales</h2>
