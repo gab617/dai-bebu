@@ -46,6 +46,7 @@
 
 #redes-sociales-footer h2{
     text-align: center;
+
 }
 
 #redes-sociales-footer #r-s-f-cont{
@@ -55,7 +56,11 @@
     justify-content: center;
     width: 50%;
     margin-bottom: 10em;
-
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.3em;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: .4em;
+    border-radius: 15%;
 }
 
 #redes-sociales-footer #r-s-f-cont li a{
@@ -63,9 +68,9 @@
 }
 
 #mail-txt{
-        
-    text-shadow: 4px 1px 5px rgb(237, 40, 156);
-    color: rgba(0, 0, 0, 0.849);
+    text-shadow: 4px 1px 5px rgb(0, 0, 0);
+    color: rgba(244, 241, 241, 0.849);
+    font-size: 1.4em;
 }
 
 
