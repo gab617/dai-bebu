@@ -67,7 +67,7 @@ function App() {
             <h1>Mi historia</h1>
             <p>Soy una modelo con varios años de experiencia en la industria. He trabajado en desfiles de moda, sesiones fotográficas y eventos destacados. También me encuentro capacitando en clases de varios tipos de danza como danzas clasicas, árabe, zumba, pole dance y twerk. Mi objetivo es seguir aprendiendo nuevos ritmos e ir puliendo cada vez más mis clases.</p>
           </div>
-          {/* <button>CV online</button> */}
+          {/*    */}
         </div>
 
       </section>
