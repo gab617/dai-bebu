@@ -1,0 +1,60 @@
+
+
+#navGallery{
+    text-align: center;
+    padding: .7em;
+    background-color: rgba(0, 0, 0, 0.384);
+    position: sticky; /* Para navegadores compatibles */
+    top: 0; /* La posición a la que se "pegará" el elemento */
+    z-index: 1000; /* Para asegurarse de que esté encima de otros elementos */
+
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+#navGallery a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#navGallery a:hover{
+    color: rgb(84, 223, 200);
+}
+
+#Gallery{
+    display: flex;
+    justify-content: space-around;
+    align-items: self-end;   
+}
+
+#Gallery h1{
+    color: rgb(255, 255, 255);
+}
+
+.card-portfolio{
+    width: 20%;
+    transition: 1s;
+}
+
+.card-portfolio:hover{
+    scale: 1.1;
+    transition: .6s;
+}
+
+.card-portfolio img{
+    width: 100%;
+    border-radius: 2em;
+    cursor: pointer;
+    aspect-ratio: auto;
+}
+
+#sesion-selected img{
+    aspect-ratio: auto;
+    width: 88%;
+    
+}

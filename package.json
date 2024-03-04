@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
     "react-social-icons": "^6.10.0",
     "smoothscroll-polyfill": "^0.4.4"
   },

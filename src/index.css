@@ -13,6 +13,21 @@ a {
   cursor: pointer;
 }
 
+.fade-in {
+  opacity: 0;
+  /* Empieza con opacidad 0 para ocultar el componente */
+  animation: fadeIn 0.5s ease-in forwards;
+  /* Animación de fundido */
+}
+
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Llega a una opacidad de 1 para mostrar el componente */
+  }
+}
+
 body {
 
   color: #333;
@@ -253,9 +268,10 @@ li a {
 
 @media only screen and (max-width: 450px) {
   body {
-/*     background: rgb(237, 40, 156);
+    /*     background: rgb(237, 40, 156);
     background: linear-gradient(90deg, rgba(237, 40, 156, 0.7679446778711485) 5%, rgba(200, 200, 8, 0.8883928571428571) 96%);
-   */}
+   */
+  }
 
   #Principal {
     display: flex;
@@ -304,7 +320,7 @@ li a {
     width: 100%;
   }
 
-  #princ-left{
+  #princ-left {
     border-radius: 8em;
     background-color: #0a090947;
   }

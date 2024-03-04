@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-export default function Portfolio({ corazones }) {
+export default function Portfolio({ urls }) {
   return (
       <>
 
@@ -13,8 +13,8 @@ export default function Portfolio({ corazones }) {
 
           <div id='gallery'>
             {
-              corazones && corazones.map((pic, index) => (
-                <div key={index} className='image'>
+              urls && urls.map((pic, index) => (
+                <div key={index} className='image fade-in'>
                   <img src={pic} alt="" />
                 </div>
               ))
