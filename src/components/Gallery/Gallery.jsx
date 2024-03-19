@@ -41,7 +41,7 @@ export default function Gallery({ galeriaData, loading }) {
                             <img src="gallery/casual/1.jpg" alt="" />
                         </div>
                     </a>
-                    <h1>Casual</h1>
+                    <h1 className="h1-card-port" >Casual</h1>
                 </div>
 
                 <div className='card-portfolio fade-in'>
@@ -51,7 +51,7 @@ export default function Gallery({ galeriaData, loading }) {
                         </div>
 
                     </a>
-                    <h1>Fest</h1>
+                    <h1 className="h1-card-port" >Fest</h1>
 
                 </div>
 
@@ -62,7 +62,7 @@ export default function Gallery({ galeriaData, loading }) {
                         </div>
 
                     </a>
-                    <h1>Formal</h1>
+                    <h1 className="h1-card-port" >Formal</h1>
                 </div>
             </div>
 

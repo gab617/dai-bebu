@@ -35,8 +35,9 @@
 
 }
 
-#Gallery h1 {
-    color: rgb(112, 89, 89);
+.h1-card-port{
+    color: rgb(201, 171, 171);
+    text-align: center;
 }
 
 .card-portfolio {
@@ -44,9 +45,15 @@
     transition: 1s;
 }
 
-.card-portfolio:hover {
+.card-portfolio:hover{
     scale: 1.1;
     transition: .6s;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.703);
+    border-radius: 2em;
+}
+
+.card-portfolio:hover > .h1-card-port{
+    color: rgb(255, 255, 255);
 }
 
 .card-portfolio img {
@@ -78,6 +85,7 @@
     width: 100%;
     aspect-ratio: auto;
     border-radius: 3em;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.388);
 
 }
 
@@ -104,6 +112,7 @@
     #GaleriaComponente img {
         width: 100%;
         border-radius: 3em;
+        box-shadow: 0px 0px 10px rgb(30, 18, 18);
 
     }
 
