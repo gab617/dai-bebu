@@ -1,12 +1,13 @@
-
-
-#navGallery{
+#navGallery {
     text-align: center;
-    padding: .7em;
+    padding: .2em;
     background-color: rgba(0, 0, 0, 0.384);
-    position: sticky; /* Para navegadores compatibles */
-    top: 0; /* La posición a la que se "pegará" el elemento */
-    z-index: 1000; /* Para asegurarse de que esté encima de otros elementos */
+    position: sticky;
+    /* Para navegadores compatibles */
+    top: 0;
+    /* La posición a la que se "pegará" el elemento */
+    z-index: 1000;
+    /* Para asegurarse de que esté encima de otros elementos */
 
     display: flex;
     justify-content: space-evenly;
@@ -14,7 +15,7 @@
 
 }
 
-#navGallery a{
+#navGallery a {
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -22,39 +23,93 @@
     font-weight: 600;
 }
 
-#navGallery a:hover{
+#navGallery a:hover {
     color: rgb(84, 223, 200);
 }
 
-#Gallery{
+#Gallery {
     display: flex;
     justify-content: space-around;
-    align-items: self-end;   
+    align-items: self-end;
+    width: 100%;
+
 }
 
-#Gallery h1{
-    color: rgb(255, 255, 255);
+#Gallery h1 {
+    color: rgb(112, 89, 89);
 }
 
-.card-portfolio{
+.card-portfolio {
     width: 20%;
     transition: 1s;
 }
 
-.card-portfolio:hover{
+.card-portfolio:hover {
     scale: 1.1;
     transition: .6s;
 }
 
-.card-portfolio img{
+.card-portfolio img {
     width: 100%;
     border-radius: 2em;
     cursor: pointer;
     aspect-ratio: auto;
 }
 
-#sesion-selected img{
+#sesion-selected img {
     aspect-ratio: auto;
     width: 88%;
+
+}
+
+/* GALERIA NUEVO COMPONENTE */
+
+#GaleriaComponente {
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    /* Tres imágenes por fila */
+    gap: 1em;
+    /* Espacio entre las imágenes */
+}
+
+#GaleriaComponente img {
+    width: 100%;
+    aspect-ratio: auto;
+    border-radius: 3em;
+
+}
+
+@media screen and (max-width: 450px) {
+    #Gallery{
+        width: 100%;
+        align-items: center;
+        margin-top: 2.5em;
+    }
+
+    #Gallery h1 {
+        display: none;
+    }
     
+    #GaleriaComponente {
+        margin-top: 2em;
+        width: 100%;
+        align-items: center;
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+        /* Tres imágenes por fila */
+        gap: 0;
+    }
+
+    #GaleriaComponente img {
+        width: 100%;
+        border-radius: 3em;
+
+    }
+
+    .card-portfolio {
+        width: 35%;
+        margin: 0 auto;
+    }
+
 }

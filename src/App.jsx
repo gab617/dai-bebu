@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from 'react';
+import { lazy, Suspense, useEffect, useState } from 'react';
 import './App.css'
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
@@ -8,19 +8,22 @@ import NavBar from './components/Navbar/NavBar';
 import Principal from './components/Principal/Principal';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
-import { cantidadFotos } from './assets/modules';
 import Gallery from './components/Gallery/Gallery';
 
 const LazyPortfolio = lazy(() => import("./components/Portfolio"))
 
+const servidor = "https://dgexpress.onrender.com"
 
 function App() {
-  const { corazones  } = urls_imgs
-  const [portafData] = useState (cantidadFotos)
-  console.log(portafData)
+  const { corazones } = urls_imgs
+  const [galeriaData, setGaleriaData] = useState({})
 
 
-
+  useEffect(() => {
+    fetch("https://dgexpress.onrender.com/archivos-galeria")
+      .then(response => response.json())
+      .then(json => setGaleriaData(json))
+  }, [])
 
   return (
     <div>
@@ -53,7 +56,7 @@ function App() {
             path='/gallery'
             element={
               <Gallery
-
+                galeriaData={galeriaData}
               />
             }
           />
