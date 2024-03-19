@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 
 
-export default function Gallery({ galeriaData }) {
+export default function Gallery({ galeriaData, loading }) {
     console.log(galeriaData)
 
     const [categActual, setCategActual] = useState("")
@@ -21,9 +21,9 @@ export default function Gallery({ galeriaData }) {
         setCategActual(categ)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         setUrlsActuales(galeriaData[categActual])
-    },[urlsActuales,categActual])    
+    }, [urlsActuales, categActual])
 
 
     return (
@@ -66,21 +66,34 @@ export default function Gallery({ galeriaData }) {
                 </div>
             </div>
 
-            <div id="GaleriaComponente">
+            {
+                loading ? (
+                    <>
+                        <div className="loader"></div>
+                    </>
+                )
+                    :
+                    (
 
-                {
-                    urlsActuales && urlsActuales.map(enlace => {
-                        return (
-                            <>
-                                <div >
-                                    <img src={`https://dgexpress.onrender.com${enlace}`} alt="" />
-                                </div>
-                            </>
-                        )
-                    })
-                }
+                        <div id="GaleriaComponente">
 
-            </div>
+                            {
+                                urlsActuales && urlsActuales.map(enlace => {
+                                    return (
+                                        <>
+                                            <div >
+                                                <img src={`https://dgexpress.onrender.com${enlace}`} alt="" />
+                                            </div>
+                                        </>
+                                    )
+                                })
+                            }
+
+                        </div>
+                    )
+
+            }
+
 
 
             {/*             <div id="sesion-selected">

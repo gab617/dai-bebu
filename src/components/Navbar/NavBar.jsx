@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./NavBar.css"
 
 export default function NavBar() {
     return (
@@ -12,7 +13,7 @@ export default function NavBar() {
                     <li><a href="#portfolio">Galería</a></li>
                     {/* <li><a href="#video">Video</a></li> */}
                     <li><a href="#contact">Contacto</a></li>
-                    <li><Link to={"/gallery"}>Galeria new</Link></li>
+                    <li id="NwGaller-li"><Link to={"/gallery"}>Galeria new</Link></li>
                 </ul>
             </div>
 

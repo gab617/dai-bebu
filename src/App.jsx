@@ -17,13 +17,19 @@ const servidor = "https://dgexpress.onrender.com"
 function App() {
   const { corazones } = urls_imgs
   const [galeriaData, setGaleriaData] = useState({})
+  const [loadGaleria, setLoadGaleria] = useState(false)
 
 
   useEffect(() => {
+    setLoadGaleria(true)
     fetch("https://dgexpress.onrender.com/archivos-galeria")
       .then(response => response.json())
-      .then(json => setGaleriaData(json))
+      .then(json => {
+        setGaleriaData(json)
+        setLoadGaleria(false)
+      })
   }, [])
+
 
   return (
     <div>
@@ -57,6 +63,7 @@ function App() {
             element={
               <Gallery
                 galeriaData={galeriaData}
+                loading = {loadGaleria}
               />
             }
           />

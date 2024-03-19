@@ -1,0 +1,21 @@
+@media only screen and (max-width: 450px){
+    #nav-content{
+        text-align: center;
+        width: 100%;
+    }
+    
+    #nav-content ul{
+        padding: .6em;
+        display: flex;
+        width: 100%;
+
+
+    }
+    
+    #nav-content a{
+        margin: 0 auto;
+        padding: .5em;
+    }
+
+}
+
