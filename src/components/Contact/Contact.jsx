@@ -16,7 +16,9 @@ export default function Contact() {
                             </a>
                         </li>
                         <li>
-                            <SocialIcon network="whatsapp" />
+                            <a target='_blank' href='https://api.whatsapp.com/send?phone=+5492215863028&text=Hola, vi tu blog!'>
+                                <SocialIcon network="whatsapp" />
+                            </a>
                         </li>
                     </ul>
                     <h1>Mail de contacto:</h1>

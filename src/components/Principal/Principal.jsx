@@ -1,7 +1,7 @@
 import { SocialIcon } from 'react-social-icons'
 
 // eslint-disable-next-line react/prop-types
-export default function Principal({src_portda}) {
+export default function Principal({ src_portda }) {
     return (
         <section id="Principal">
             <div id='princ-left'>
@@ -18,7 +18,9 @@ export default function Principal({src_portda}) {
                             </a>
                         </li>
                         <li>
-                            <SocialIcon network="whatsapp" />
+                            <a target='_blank' href='https://api.whatsapp.com/send?phone=+5492215863028&text=Hola, vi tu blog!'>
+                                <SocialIcon network="whatsapp" />
+                            </a>
                         </li>
                     </ul>
                 </div>
