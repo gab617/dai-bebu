@@ -1,0 +1,10 @@
+@media only screen and (max-width: 450px){
+    #contact #r-s-f-cont{
+        width: 90%;
+    }
+    #mail-txt{
+        width: 100%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
