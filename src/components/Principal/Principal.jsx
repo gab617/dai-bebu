@@ -8,7 +8,7 @@ export default function Principal({src_portda}) {
                 <div id='p-l-text'>
                     <h2>Hola, soy</h2>
                     <h1>Daiana Estefania</h1>
-                    <p>Artista/ Modelo/ Profesional de la danza</p>
+                    <p>Artista & Modelo</p>
                 </div>
                 <div id='redes-principal'>
                     <ul>
