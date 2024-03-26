@@ -229,8 +229,6 @@ li a {
 
 #gallery-content {
   width: 100%;
-
-
 }
 
 #gallery-content h1 {
@@ -243,7 +241,7 @@ li a {
 #gallery {
   width: 90%;
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 1em;
   margin: 0 auto;
   margin-bottom: 2em;
