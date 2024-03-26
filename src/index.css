@@ -314,23 +314,24 @@ li a {
     flex-direction: column;
     align-items: center;
     margin-bottom: .8em;
-    margin: 0 auto;
   }
 
   #p-l-text {
     margin-top: 1.3em;
-    width: 90%;
+    width: 80%;
   }
 
   #p-l-text h2 {
     color: #ffe180;
+    margin-top: .5em;
     margin-bottom: .3em;
-    font-size: 3em;
+    font-size: 2.6em;
+
   }
 
   #p-l-text h1 {
     color: #f4f4f4;
-    font-size: 5em;
+    font-size: 4.3em;
 
   }
 
@@ -338,6 +339,7 @@ li a {
     font-size: 1.2em;
     color: #f4f4f4;
     margin-top: 1em;
+    text-align: center;
   }
 
   #princ-right {
