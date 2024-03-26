@@ -315,7 +315,7 @@ li a {
     align-items: center;
     margin-bottom: .8em;
     text-align: center;
-
+    margin: 0 auto;
   }
 
   #p-l-text {
